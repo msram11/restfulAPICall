@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ramz.project.com.apicall.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="API Call"
+        android:layout_margin="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_api"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Hello World!"/>
+
+</RelativeLayout>
